@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/google-g-2015-logo-png-transparent.png"/>
+  <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- header + nav elements -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar__left">
+          <li><a href="#">Home</a></li>
+        </ul>
+        <ul class="navbar__right">
+          <li><a href="advanced.html">Advanced</a></li>
+          <li><a href="images.html">Images</a></li>
+          <li><a href="#"><img class="navbar__menu" src="assets/view-list-icons-icon-1024x1024-w96y0t8e.png" alt="menu"/></a></li>
+          <li><a href="#"><img class="navbar__profile" src="assets/3177440.png" 
+            alt="profile"/></a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- main (logo + search) -->
+    <main>
+      <section class="logo">
+        <img class="logo__img" src="assets/Google_2015_logo.svg.png" 
+          alt="Google Logo"/>
+      </section>
+      <section class="search">
+        <section class="search__container">
+          
+          <img class="search__img" src="assets/magnifying-glass-1976105_1280.webp" 
+            alt="Magnifying Glass"/>
+          
+          <section class="search__bar">
+            <form action="http://www.google.com/search">
+            <input id="userInput" type="text" name="q" size="55">
+            <!-- Hidden onclick -->
+            <input type="submit" hidden onclick="showAlert()">
+            </form>
+          </section>
+        </section>
+        <section class="buttons">
+          <form action="http://www.google.com/search">
+            <button type="submit" name="q" onclick="showAlert()">Google Search</button>
+            <button type="submit" name="q" onclick="showAlert()">I'm Feeling Lucky</button>
+          </form>
+        </section>
+      </section>
+
+      <!-- Footer-->
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+          </ul>
+          <ul class="footer__center">
+            <li><a href="#"><img class="leaf" src="assets/download.png" 
+              alt="Leaf"/>Our third decade of climate action: join us</a></li>
+          </ul>
+          <ul class="footer__right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </main>
+</body>
+</html>
